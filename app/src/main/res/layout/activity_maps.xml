@@ -1,0 +1,36 @@
+<merge android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.myothiha09.m4cs2340.controller.MapsActivity" />
+
+
+    <Button
+        android:id="@+id/location"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:elevation="20dp"
+
+        android:onClick="useCurrentLocation"
+        android:text="Add Report at Current Location" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:elevation="0dp"
+        android:onClick="onGoBackPressed"
+        android:text="Go Back" />
+
+</merge>
+
+
